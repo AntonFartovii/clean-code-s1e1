@@ -20,9 +20,10 @@ body {
   font-family: fantasy;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
-  .header {  text-align: center;
+  .header {
+    text-align: center;
   }
 }
 
@@ -133,7 +134,7 @@ li > label {
   width: 226px;
 }
 
-li >    input[type="text"] {
+li > input[type="text"] {
   width: 226px;
 }
 
