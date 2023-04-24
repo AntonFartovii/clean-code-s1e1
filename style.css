@@ -152,6 +152,7 @@ button.task-list__task__delete-button img:hover {
 }
 
 /* Completed */
+.complete-section .task-list__task__label,
 .task-list__task_completed label {
   text-decoration: line-through;
   color: #888;
