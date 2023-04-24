@@ -141,13 +141,13 @@ li > .task-input[type="text"] {
   width: 226px;
 }
 
-button.task-list__task__delete-button img {
+.task-list__task__delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.task-list__task__delete-button img:hover {
+.task-list__task__delete-button img:hover {
   transform: rotateZ(0);
 }
 
@@ -163,11 +163,11 @@ ul li .task-input[type=text] {
   display:none;
 }
 
-ul li.task-list__task_editable .task-input[type=text] {
+ul .task-list__task_editable .task-input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.task-list__task_editable label {
+ul .task-list__task_editable label {
   display: none;
 }
