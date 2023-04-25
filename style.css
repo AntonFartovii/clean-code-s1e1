@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.header img {
+.header .header__logo {
   width: 100%;
 }
 
@@ -43,22 +43,22 @@
   display: flex;
 }
 
-ul {
-  margin: 0;
+.task-list {
+  margin: 0px;
   padding: 0px;
 }
 
-li,
-h3 {
+.task-list__task,
+.section-title {
   list-style: none;
 }
 
-input,
-button {
+.task-input,
+.button {
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -68,13 +68,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h3,
-.adding-section__title {
+.section-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -113,7 +112,7 @@ h3,
 }
 
 /* Task list */
-li {
+.task-list__task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,52 +121,55 @@ li {
   align-items: center;
 }
 
-li > * {
+.task-list__task > * {
   vertical-align: middle;
 }
 
-li > .task-list__task__checkbox[type="checkbox"] {
+.task-list__task > .task-list__task__checkbox[type="checkbox"] {
   margin: 0 10px;
 }
 
 .task-list__task__label {
+  flex-grow: 1;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > .task-input[type="text"] {
+.task-list__task > .task-input[type="text"] {
   width: 226px;
 }
 
-.task-list__task__delete-button img {
+.task-list__task__edit-button .task-list__task__edit-button__icon,
+.task-list__task__delete-button .task-list__task__delete-button__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task-list__task__delete-button img:hover {
+.task-list__task__edit-button .task-list__task__edit-button__icon:hover,
+.task-list__task__delete-button .task-list__task__delete-button__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.complete-section .task-list__task__label,
-.task-list__task_completed label {
+.complete-section .task-list__task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-list__task .task-input[type=text] {
+.task-list .task-list__task .task-input[type=text] {
   display: none;
 }
 
-.to-do-section .task-list__task_editable .task-input[type=text] {
+.task-list .task-list__task_editable .task-input[type=text] {
   display: inline-block;
   width: 224px;
+  flex-grow: 1;
 }
 
-.to-do-section .task-list__task_editable label {
+.task-list .task-list__task_editable .task-list__task__label {
   display: none;
 }
