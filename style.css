@@ -159,15 +159,15 @@ li > .task-input[type="text"] {
 }
 
 /* Edit Task */
-ul li .task-input[type=text] {
+.task-list__task .task-input[type=text] {
   display: none;
 }
 
-ul .task-list__task_editable .task-input[type=text] {
+.to-do-section .task-list__task_editable .task-input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul .task-list__task_editable label {
+.to-do-section .task-list__task_editable label {
   display: none;
 }
