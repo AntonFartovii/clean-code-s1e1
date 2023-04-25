@@ -160,7 +160,7 @@ li > .task-input[type="text"] {
 
 /* Edit Task */
 ul li .task-input[type=text] {
-  display:none;
+  display: none;
 }
 
 ul .task-list__task_editable .task-input[type=text] {
